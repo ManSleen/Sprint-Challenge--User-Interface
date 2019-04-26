@@ -172,6 +172,11 @@ h2 {
   font-size: 0.9em;
 }
 
+#top-nav a:hover {
+  text-decoration: underline;
+  color: #8e8e8e;
+}
+
 #top-nav {
   display: flex;
   flex-wrap: nowrap;
@@ -211,6 +216,12 @@ header {
   border-bottom: 1px dashed black;
 }
 
+.middle-content-about .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .middle-content h2 {
   padding: 0 2%;
   margin-bottom: 0;
@@ -233,7 +244,7 @@ header {
   justify-content: center;
 }
 
-.middle-content .boxes .about-box {
+.middle-content-about .boxes .about-box {
   width: 46%;
   height: 100%;
   background: white;
@@ -243,38 +254,43 @@ header {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-  border: 1px solid red;
 }
 
-.middle-content .boxes .about-box h2 {
+.middle-content-about .boxes .about-box h2 {
   color: black;
   margin: 15px 0 15px 0;
   padding: 0;
 }
 
-.middle-content .boxes .about-box p {
+.middle-content-about .boxes .about-box p {
   color: black;
   font-size: 1em;
   margin-bottom: 2px;
 }
 
-.middle-content .boxes .about-box button {
+.middle-content-about .boxes .about-box button {
   margin: 20px 0 10px 0;
   border: 2px solid black;
   padding: 10px 20px;
   border-radius: 10px;
   background-color: white;
   font-size: 1em;
+  cursor: pointer;
 }
 
-.middle-content .boxes .about-box hr {
+.middle-content-about .boxes .about-box button:hover {
+  color: white;
+  background-color: black;
+}
+
+.middle-content-about .boxes .about-box hr {
   border-top: 1px dashed black;
   border-bottom: none;
   border-width: 1px;
   width: 100%;
 }
 
-.middle-content .boxes .about-box img {
+.middle-content-about .boxes .about-box img {
   width: 100%;
 }
 
@@ -332,6 +348,19 @@ header {
   padding-right: 0;
 }
 
+.bottom-content-about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 0 2%;
+  padding-bottom: 20px;
+}
+
+.about-text-container-bottom {
+}
+
 footer {
   width: 100%;
   background: black;
@@ -349,4 +378,9 @@ footer nav {
 footer nav a {
   color: white;
   text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ccc;
 }
